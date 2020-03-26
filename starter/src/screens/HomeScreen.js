@@ -9,7 +9,8 @@ const HomeScreen = ({ navigation }) => {
     { title: "Counter" },
     { title: "Colors" },
     { title: "Square" },
-    { title: "Text" }
+    { title: "Text" },
+    { title: "Box" }
   ];
 
   return (
