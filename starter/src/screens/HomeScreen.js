@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Button } from "react-native";
+import { StyleSheet, View, Text, Button } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
   const routes = [
@@ -8,11 +8,13 @@ const HomeScreen = ({ navigation }) => {
     { title: "Image" },
     { title: "Counter" },
     { title: "Colors" },
-    { title: "Square" }
+    { title: "Square" },
+    { title: "Text" }
   ];
 
   return (
     <View>
+      <Text style={styles.text}>Home screen</Text>
       {routes.map(({ title }) => (
         <Button
           key={title}
@@ -27,7 +29,9 @@ const HomeScreen = ({ navigation }) => {
 // component styles
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    textAlign: "Center",
+    fontSize: 30,
+    margin: 1
   }
 });
 
