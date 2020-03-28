@@ -12,7 +12,7 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
         value={term}
         onChangeText={onTermChange}
         autoCapitalize="none"
-        autoCorrect="false"
+        autoCorrect={false}
         onEndEditing={onTermSubmit}
       />
     </View>
@@ -24,7 +24,7 @@ export default SearchBar;
 const styles = StyleSheet.create({
   backgroundStyle: {
     marginTop: 10,
-    backgroundColor: "F0EEEE",
+    backgroundColor: "#F0EEEE",
     height: 50,
     borderRadius: 5,
     marginHorizontal: 15,
